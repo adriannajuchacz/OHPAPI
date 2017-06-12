@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: url("../images/kanse_gif.gif") no-repeat center center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    line-height: 1.4285;
+}
+.content {
+    position: relative;
+    margin-left: 10%;
+    margin-top: 100px;
+    height: 550px;
+    width: 80%;
+}
+/*STYLING CLICK ON ME */
+.clickonme {
+    position: absolute;
+    color: #fff;
+}
+.clickonme:hover {
+    opacity: 0;
+}
+/*END OF STYLING CLICK ON ME */
+.list {
+    position: absolute;
+    height: auto;
+    width: 100px;
+    transform: translateX(-75px) translateY(-20px);
+}
+.menu li {
+    list-style: none;
+}
+.menu a {
+    text-decoration: none;
+    color: #fff;
+}
+.menu a:hover {
+    opacity: 0;
+}
+/*END OF MENU PART*/
+.box {
+    height: 200px;
+    width: 200px
+}
+/*END OF GALLERY DISPLAY PART*/
+/*ADJUSTMENT OF PICTURES */
+.bigBox {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+}
+.photoBox {
+    height: 100%;
+    text-align: center;
+    position: relative;
+}
+.pic1 {
+    transform: translateX(-50%) translateY(0px);
+    background: url("../images/vadik.jpg") no-repeat center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    width: 90%;
+    opacity: 0;/**/
+}
+.pic2 {
+    transform: translateX(-50%) translateY(0px);
+    background: url("../images/cuties.jpg") no-repeat center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+    margin-top: 30em;
+    opacity: 0;/**/
+}
+.pic3 {
+    transform: translateX(-50%) translateY(0px);
+    background: url("../images/gosha.jpg") no-repeat center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+    margin-top: 30em;
+    opacity: 0;
+    /**/
+    }
+.pic4 {
+    transform: translateX(-50%) translateY(0px);
+    background: url("../images/pouring.jpg") no-repeat center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 90%;
+    margin-top: 20em;
+    opacity: 0;
+    /**/
+}
+.pic5 {
+    transform: translateX(-50%) translateY(0px);
+    background: url("../images/lab.jpg") no-repeat center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    width: 110%;
+    margin-top: 20em;
+    opacity: 0;
+    /**/
+}
+.pic6 {
+    transform: translateX(-50%) translateY(0px);
+    background: url("../images/loszki.jpg") no-repeat center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    width: 110%;
+    margin-top: 40em;
+    opacity:0;
+    /**/
+}
+.pic7 {
+    transform: translateX(-50%) translateY(0px);
+    background: url("../images/fila.jpg") no-repeat center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:800px;
+    width: 80%;
+    opacity: 0;
+    margin-top: 50em;
+    /**/
+}
+/*END OF ADJUSTMENT OF PICTURES*/
+/*ANIMATION FOR ALL BOXES */
+.shake {
+    animation-name: shaking;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 0.3s;
+    animation-iteration-count: 1;
+    animation-direction:  alternate;
+    animation-fill-mode: both;
+}
+@keyframes shaking {
+    0% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 1;
+    }
+    85% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 1;
+    }
+    95% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+}
+}
+.flash {
+    animation-name: flashing;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction:  alternate;
+    animation-fill-mode: both;
+}
+@keyframes flashing {
+    0% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 0;
+    }
+    95% {
+
+    }
+    100% {
+        opacity: 1;
+}
+}
+/*END OF ANIMATION OF PICTURES*/

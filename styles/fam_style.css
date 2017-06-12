@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: url("../images/szum.gif") no-repeat center center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    line-height: 1.4285;
+}
+.content {
+    position: relative;
+    margin-left: 10%;
+    margin-top: 6%;
+    height: 550px;
+    width: 80%;
+}
+
+.list {
+    height: auto;
+    width: 100px;
+    transform: translateX(-75px) translateY(-20px);
+}
+.menu li {
+    list-style: none;
+}
+.menu a {
+    text-decoration: none;
+    color: #fff;
+}
+.menu a:hover {
+    opacity: 0;
+}
+/*END OF MENU PART*/
+.box {
+    height: 200px;
+    width: 200px;
+    background: #fff;
+    position: absolute;
+}
+/*trial*/
+.pic_holder {
+    left: 50%;
+    transform: translateX(-50%) translateY(0px);
+    position: absolute;
+    display: block;
+    text-align: center;
+}
+/*END OF TRIAL PART*/
+/*niko*/
+#niko {
+    width: 640px;
+    height: 819px;
+    background: url("../images/waters.jpg");
+    display: inline-block;
+    transform: translateX(-50%) translateY(0px);
+}
+/*END OF NIKO PART*/
+#punch {
+    width: 1048px;
+    height: 560px;
+    background: url("../images/punch.jpg");
+    display: inline-block;
+    margin-top: -150px;
+    transform: translateX(10%) translateY(0);
+}
+/*END OF PUNCH PART*/
+/*red*/
+#red {
+    width: 860px;
+    height: 757px;
+    background: url("../images/red.jpg");
+    display: inline-block;
+    margin-top: -50px;
+    transform: translateX(-30%) translateY(0);
+
+}
+/*END OF RED PART*/
+/*ADJUSTING MOVING*/
+.moving-zone {
+    position: absolute;
+    top:50%; left:50%;
+    width: 700px; height:1400px;
+    margin: -60px 0 0 -150px;
+    perspective: 800px;
+    transform: translateX(-25%) translateY(0);
+}
+.popup {
+    position: absolute;
+    width: 700px;
+    height: 1400px;
+    padding: 80px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transform-style: preserve-3d;
+}
+/*END OF ADJUSTING MOVING*/
+/*DESCRIPTIONS*/
+.texty {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    display: block;
+    text-align: center;
+    margin-left: 50%;
+}
+.text {
+    height: 600px;
+    width: 600px;
+    opacity: 1;
+    position: relative;
+    border: 2px dashed black;
+}
+.text_container{
+    position: relative;
+}
+.text p{
+    position: absolute;
+    margin-top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.description {
+    font-family: Helvetica;
+    font-size: 1em;
+    color: #fff;
+    text-transform: uppercase;
+    border: 2px dashed black;
+}
+.names{
+    font-family: 'Press Start 2P', cursive;;
+    opacity: 0.8;
+    font-size: 100px;
+    color: #fff;
+}
+#p1 {
+    transform: translateX(0%) translateY(0%);
+}
+#d1{
+    transform: translateX(25%) translateY(-5%);
+}
+#p2 {
+    transform: translateX(-90%) translateY(-10%);
+}
+#d2{
+    transform: translateX(-175%) translateY(50%);
+}
+#p3 {
+    transform: translateX(40%) translateY(-10%);
+}
+#d3{
+    transform: translateX(-70%) translateY(50%);
+}
+
+/*END OF DESCRIPTIONS PART*/
